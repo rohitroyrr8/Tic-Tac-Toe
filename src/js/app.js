@@ -88,7 +88,6 @@ App = {
           gasPrice: 200000000000
         })
         .then(function(res) {
-          alert(res);
           $('#joinBtn').hide();
         });
     });
