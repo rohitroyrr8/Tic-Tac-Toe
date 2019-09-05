@@ -2,7 +2,7 @@
 # Tic-Tac-Toe
 
 ## Dependencies
-Install these prerequisites to follow along with the tutorial. See free video tutorial or a full explanation of each prerequisite.
+Install these prerequisites in your machine
 - NPM: https://nodejs.org
 - Ganache: http://truffleframework.com/ganache/
 - Metamask (Optional): https://metamask.io/
