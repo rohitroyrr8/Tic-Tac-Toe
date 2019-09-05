@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contract Results</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" style="width: 650px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 class="text-center">Tic Tac Toe</h1>
+          <div class="text-center"><i id="etherAddr"></i></div>
+          <hr/>
+          <br/>
+          <div id="loader">
+            <p class="text-center">Loading...</p>
+          </div>
+          <div id="content" style="display: none;">
+            <div>
+              <code style="font-size: 18px" id="gameStatus"></code>
+              <code style="font-size: 18px" id="gameWinner"></code>
+              
+            </div>
+            <div id="boardDiv" style="text-align: center; font-size: 21px;     border: 1px solid; margin: 20px 205px;"></div>
+            <hr/>
+            <form onSubmit="App.perform(); return false;">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="num" class="form-control" id="xpos" min="0" max="2" placeholder="xpos">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input type="num" class="form-control" id="ypos" min="0" max="2" placeholder="ypos">
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <button type="submit" class="btn btn-primary" id="perform" >Perform</button>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-group">
+                    <div id="refreshBtn" class="btn btn-primary">Refresh</div>
+                  </div>
+                </div>
+              </div>
+              
+              <hr />
+            </form>
+
+            <p id="accountAddress" class="text-center"></p>
+          </div>
+          <!-- <div id="perform1" class="btn btn-primary">Player 1</div>
+          <div id="perform2" class="btn btn-success">Player 2</div> -->
+          <div id="joinBtn" class="btn btn-primary">Join Game</div>
+          <!-- <div id="gameOverBtn" class="btn btn-primary">Game Over?</div> -->
+          
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
